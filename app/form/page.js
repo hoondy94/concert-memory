@@ -118,7 +118,7 @@ export default function FormPage() {
       }}
     >
       {/* 상단 타이틀 */}
-      <div className="flex justify-center pt-6 pb-4">
+      <div className="flex justify-center pt-6 pb-6">
         <img
           src="/landing_title.png"
           alt="CONCERT MEMORY"

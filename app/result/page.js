@@ -56,7 +56,7 @@ export default function ResultPage() {
         />
       </div>
 
-      {/* 반응형 2열 그리드 — 모바일 1열, 데스크탑 2열 */}
+      {/* 반응형 2열 그리드 */}
       <div
         className="responsive-grid mx-auto"
         style={{ maxWidth: "1100px", width: "calc(100% - 32px)" }}
@@ -111,7 +111,7 @@ export default function ResultPage() {
                 backgroundColor: "#FF0099",
                 padding: "15px 20px",
                 marginLeft: "10px",
-                width: "calc(100% - 20px)",
+                marginRight: "10px",
               }}
             >
               {artist && (
@@ -170,38 +170,38 @@ export default function ResultPage() {
             </p>
           </div>
 
-          {/* 버튼 2개 */}
-          <div className="flex flex-col sm:flex-row gap-4">
+          {/* 버튼 1열 배치 */}
+          <div className="flex flex-col gap-3">
             <button
               onClick={handleDownload}
-              className="flex-1"
               style={{
                 fontFamily: fontStack,
                 backgroundColor: "white",
                 color: "#FF0099",
                 border: "2px solid #FF0099",
-                padding: "14px 0",
+                padding: "12px 0",
                 fontSize: "16px",
                 letterSpacing: "0.05em",
                 cursor: "pointer",
                 borderRadius: "4px",
+                width: "100%",
               }}
             >
               저장하기
             </button>
             <button
               onClick={() => router.push("/")}
-              className="flex-1"
               style={{
                 fontFamily: fontStack,
                 backgroundColor: "white",
                 color: "#FF0099",
                 border: "2px solid #FF0099",
-                padding: "14px 0",
+                padding: "12px 0",
                 fontSize: "16px",
                 letterSpacing: "0.05em",
                 cursor: "pointer",
                 borderRadius: "4px",
+                width: "100%",
               }}
             >
               시작 화면으로
