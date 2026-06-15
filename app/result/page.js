@@ -63,8 +63,13 @@ export default function ResultPage() {
         style={{ maxWidth: "1100px", width: "calc(100% - 32px)" }}
       >
         {/* 왼쪽 — 이미지 + 프레임 + 아티스트/곡명 */}
-        <div className="flex flex-col">
-
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            gap: "20px",
+          }}
+        >
           {/* 이미지 + 프레임 겹치기 */}
           <div
             style={{
@@ -113,7 +118,6 @@ export default function ResultPage() {
                 padding: "15px 20px",
                 marginLeft: "10px",
                 marginRight: "10px",
-                fontFamily: fontStack,
               }}
             >
               {artist && (
@@ -147,8 +151,13 @@ export default function ResultPage() {
         </div>
 
         {/* 오른쪽 — 프롬프트 박스 + 버튼 */}
-        <div className="flex flex-col gap-5">
-
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            gap: "20px",
+          }}
+        >
           {/* 프롬프트 텍스트 박스 */}
           <div
             style={{

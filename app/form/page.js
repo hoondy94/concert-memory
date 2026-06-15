@@ -50,7 +50,7 @@ export default function FormPage() {
     fontWeight: "400",
     fontSize: "20px",
     color: "#111",
-    marginBottom: "6px",
+    marginBottom: "4px",
     display: "block",
     letterSpacing: "0.03em",
   };
@@ -141,7 +141,7 @@ export default function FormPage() {
         <div className="responsive-grid">
 
           {/* 왼쪽 열 */}
-          <div className="flex flex-col gap-10">
+          <div className="flex flex-col gap-12">
 
             {/* Artist / Concert */}
             <div>
@@ -214,7 +214,7 @@ export default function FormPage() {
           </div>
 
           {/* 오른쪽 열 */}
-          <div className="flex flex-col gap-10">
+          <div className="flex flex-col gap-12">
 
             {/* Lighting */}
             <div>
