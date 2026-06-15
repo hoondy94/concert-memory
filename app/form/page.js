@@ -138,7 +138,7 @@ export default function FormPage() {
         }}
       >
         {/* 반응형 2열 그리드 — 모바일 1열, 데스크탑 2열 */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="responsive-grid">
 
           {/* 왼쪽 열 */}
           <div className="flex flex-col gap-6">
