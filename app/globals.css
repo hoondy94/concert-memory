@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'NexonKart';
+  src: url('/fonts/NEXON Kart Gothic Kor Medium.ttf') format('truetype');
+  font-weight: 400;
+}
+
+input, textarea, select {
+  font-family: var(--font-anton), 'NexonKart', sans-serif;
+  font-weight: bold;
+}
+
+.responsive-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .responsive-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.form-container {
+  background-color: rgba(255, 255, 255, 0.75);
+  margin: 20px auto 40px;
+  max-width: 860px;
+  width: calc(100% - 32px);
+  padding: 32px 24px;
+  border-radius: 8px;
+}
