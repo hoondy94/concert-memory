@@ -45,6 +45,7 @@ export default function ResultPage() {
         backgroundRepeat: "no-repeat",
         padding: "32px 16px",
         boxSizing: "border-box",
+        fontFamily: fontStack,
       }}
     >
       {/* 상단 타이틀 이미지 */}
@@ -112,6 +113,7 @@ export default function ResultPage() {
                 padding: "15px 20px",
                 marginLeft: "10px",
                 marginRight: "10px",
+                fontFamily: fontStack,
               }}
             >
               {artist && (
@@ -170,8 +172,14 @@ export default function ResultPage() {
             </p>
           </div>
 
-          {/* 버튼 1열 배치 */}
-          <div className="flex flex-col gap-3">
+          {/* 버튼 2열 고정 */}
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "1fr 1fr",
+              gap: "12px",
+            }}
+          >
             <button
               onClick={handleDownload}
               style={{
@@ -180,11 +188,10 @@ export default function ResultPage() {
                 color: "#FF0099",
                 border: "2px solid #FF0099",
                 padding: "12px 0",
-                fontSize: "16px",
-                letterSpacing: "0.05em",
+                fontSize: "15px",
+                letterSpacing: "0.03em",
                 cursor: "pointer",
                 borderRadius: "4px",
-                width: "100%",
               }}
             >
               저장하기
@@ -197,11 +204,10 @@ export default function ResultPage() {
                 color: "#FF0099",
                 border: "2px solid #FF0099",
                 padding: "12px 0",
-                fontSize: "16px",
-                letterSpacing: "0.05em",
+                fontSize: "15px",
+                letterSpacing: "0.03em",
                 cursor: "pointer",
                 borderRadius: "4px",
-                width: "100%",
               }}
             >
               시작 화면으로
