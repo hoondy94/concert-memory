@@ -29,7 +29,7 @@ export default function FormPage() {
     }));
   };
 
-  const fontStack = "var(--font-anton), 'NexonKart', sans-serif";
+  const fontStack = "var(--font-anton), 'NexonKart'";
 
   const inputStyle = {
     width: "100%",

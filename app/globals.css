@@ -9,7 +9,7 @@
 }
 
 input, textarea, select {
-  font-family: var(--font-anton), 'NexonKart', sans-serif;
+  font-family: var(--font-anton), 'NexonKart';
   font-weight: 700;
 }
 

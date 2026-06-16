@@ -31,7 +31,7 @@ export default function ResultPage() {
     link.click();
   };
 
-  const fontStack = "var(--font-anton), 'NexonKart', sans-serif";
+  const fontStack = "var(--font-anton), 'NexonKart'";
 
   if (!imageBase64) return null;
 
